@@ -1,7 +1,10 @@
 
 
-buttonClick(entry){
-  entryString = "";
-  entryString += entry;
-  return entryString;
+function buttonClick(entry){
+  if(entry == null){
+    document.getElementById('myScreen').innerHTML = "";
+  }
+  else{
+    document.getElementById('myScreen').innerHTML += entry;
+  }
 }

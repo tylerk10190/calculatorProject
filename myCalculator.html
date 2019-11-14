@@ -4,44 +4,39 @@
 <head>
   <link  rel= "stylesheet" type="text/css" href="myCalculator.css">
   <script src="myCalculator.js"></script>
-
 </head>
 
 <body>
-
 <div id="myCalculator" class="largeBin">
   <div>
     <textarea  id="myScreen" class="screenBin"></textarea>
   </div>
   <div id="myButtons" style="align:center" class="smallBin">
-  <button id="clearButton" class="buttonTwo">AC</button>
-  <button id="negPosButton" class="buttonTwo">+/-</button>
-  <button id="percentButton" class="buttonTwo">%</button>
-  <button id="divideButton" class="buttonTwo">/</button>
+  <button id="clearButton" class="buttonTwo" onclick="buttonClick()">AC</button>
+  <button id="negPosButton" class="buttonTwo" onclick="buttonClick()">+/-</button>
+  <button id="percentButton" class="buttonTwo" onclick="buttonClick("%")">%</button>
+  <button id="divideButton" class="buttonTwo" onclick="buttonClick("/")">/</button>
   <br>
-  <button id="seven" class="buttonOne">7</button>
-  <button id="eight" class="buttonOne">8</button>
-  <button id="nine" class="buttonOne">9</button>
-  <button id="multiplyButton" class="buttonTwo">X</button>
+  <button id="seven" class="buttonOne" onclick="buttonClick(7)">7</button>
+  <button id="eight" class="buttonOne" onclick="buttonClick(8)">8</button>
+  <button id="nine" class="buttonOne" onclick="buttonClick(9)">9</button>
+  <button id="multiplyButton" class="buttonTwo" onclick="buttonClick(x)">x</button>
   <br>
-  <button id="four" class="buttonOne">4</button>
-  <button id="five" class="buttonOne">5</button>
-  <button id="six" class="buttonOne">6</button>
-  <button id="minusButton" class="buttonTwo">-</button>
+  <button id="four" class="buttonOne" onclick="buttonClick(4)">4</button>
+  <button id="five" class="buttonOne" onclick="buttonClick(5)">5</button>
+  <button id="six" class="buttonOne" onclick="buttonClick(6)">6</button>
+  <button id="minusButton" class="buttonTwo" onclick="buttonClick(-)">-</button>
   <br>
-  <button id="one" class="buttonOne">1</button>
-  <button id="two" class="buttonOne">2</button>
-  <button id="three" class="buttonOne">3</button>
-  <button id="addButton" class="buttonTwo">+</button>
+  <button id="one" class="buttonOne" onclick="buttonClick(1)">1</button>
+  <button id="two" class="buttonOne" onclick="buttonClick(2)">2</button>
+  <button id="three" class="buttonOne" onclick="buttonClick(3)">3</button>
+  <button id="addButton" class="buttonTwo" onclick="buttonClick(+)">+</button>
   <br>
-  <button id="zero" class="buttonThree">0</button>
-  <button id="decimalButton" class="buttonOne">.</button>
-  <button id="equalsButton" class="buttonTwo">=</button>
+  <button id="zero" class="buttonThree" onclick="buttonClick(0)">0</button>
+  <button id="decimalButton" class="buttonOne" onclick="buttonClick(.)">.</button>
+  <button id="equalsButton" class="buttonTwo" onclick="buttonClick(=)">=</button>
   <br>
 </div>
-
-
-
 
 </div>
 
