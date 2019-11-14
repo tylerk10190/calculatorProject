@@ -1,0 +1,11 @@
+
+.largeBin{
+  border: 15px solid blue;
+  background-color: gray;
+  height: 400px;
+  width: 300px;
+}
+
+.screenBin{
+  width: 295px;
+}
