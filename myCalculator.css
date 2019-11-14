@@ -2,10 +2,37 @@
 .largeBin{
   border: 15px solid blue;
   background-color: gray;
-  height: 400px;
-  width: 300px;
+  height: 390px;
+  width: 295px;
+}
+
+.smallBin{
+  height: 350px;
+  width: 295px;
 }
 
 .screenBin{
-  width: 295px;
+  width: 289px;
+  height: 100px;
+}
+
+.buttonOne{
+  background-color: blue;
+  color: white;
+  width: 70px;
+  height: 55px;
+}
+
+.buttonTwo{
+  background-color: Aqua;
+  color: white;
+  width: 70px;
+  height: 55px;
+}
+
+.buttonThree{
+  background-color: blue;
+  color: white;
+  width: 144px;
+  height: 55px;
 }
