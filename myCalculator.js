@@ -6,18 +6,48 @@ function buttonClick(entry){
   }
   else if(entry == "="){
     if(document.getElementById('myScreen').innerHTML.includes("/")){
-    var myScreenString =  document.getElementById('myScreen').innerHTML.toString();
-    var num1 = myScreenString.slice(0,1);
-    var num2 = myScreenString.slice(2,3);
-    document.getElementById('myScreen').innerHTML = num1 / num2;
+    document.getElementById('myScreen').innerHTML = solve(document.getElementById('myScreen').innerHTML);
+    }
+    else if(document.getElementById('myScreen').innerHTML.includes("-")){
+      document.getElementById('myScreen').innerHTML = solve(document.getElementById('myScreen').innerHTML);
+    }
+    else if(document.getElementById('myScreen').innerHTML.includes("+")){
+      document.getElementById('myScreen').innerHTML = solve(document.getElementById('myScreen').innerHTML);
+    }
+    else if(document.getElementById('myScreen').innerHTML.includes("x")){
+      document.getElementById('myScreen').innerHTML = solve(document.getElementById('myScreen').innerHTML);
     }
   }
-  else{
-    document.getElementById('myScreen').innerHTML += entry;
+    else{
+      document.getElementById('myScreen').innerHTML += entry;
+    }
   }
+
+function solve(equation){
+  if(equation.includes("/")){
+  var screenArray = equation.split('/');
+  var num1 = screenArray[0];
+  var num2 = screenArray[1];
+  result = num1 / num2;
+}
+else if(equation.includes("-")){
+var screenArray = equation.split('-');
+var num1 = screenArray[0];
+var num2 = screenArray[1];
+result = num1 - num2;
+}
+else if(equation.includes("+")){
+var screenArray = equation.split('+');
+var num1 = screenArray[0];
+var num2 = screenArray[1];
+result = num1 + num2;
+}
+else if(equation.includes("x")){
+var screenArray = equation.split('x');
+var num1 = screenArray[0];
+var num2 = screenArray[1];
+result = num1 * num2;
 }
 
-function addTwoNumbers(num1, num2){
-  result = num1 + num2;
-  console.log(result)
+return result;
 }
