@@ -42,3 +42,7 @@
   width: 144px;
   height: 55px;
 }
+
+.center-div{
+  margin: auto;
+}
