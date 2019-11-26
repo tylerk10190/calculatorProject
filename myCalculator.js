@@ -40,7 +40,7 @@ else if(equation.includes("+")){
 var screenArray = equation.split('+');
 var num1 = screenArray[0];
 var num2 = screenArray[1];
-result = num1 + num2;
+result = parseFloat(num1) + parseFloat(num2);
 }
 else if(equation.includes("x")){
 var screenArray = equation.split('x');
